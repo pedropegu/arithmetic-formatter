@@ -1,8 +1,8 @@
-def arithmetic_arranger(problems,val:False):
+def arithmetic_arranger(problems,val=False):
     
     
     if len(problems) > 5:
-        arranged_problems = "Error: Too many problems"
+        arranged_problems = "Error: Too many problems."
         return arranged_problems
     
     operations = list(map(lambda x: x.split()[1], problems))
@@ -21,7 +21,7 @@ def arithmetic_arranger(problems,val:False):
             return arranged_problems
 
     for x in numbers:
-        if len(x) > 5:
+        if len(x) > 4:
             arranged_problems = "Error: Numbers cannot be more than four digits."
             return arranged_problems
  
